@@ -1,0 +1,65 @@
+
+{% extends 'FrontEnd/layout.html.twig' %}
+{% block title %}Forum{% endblock title %}
+
+
+{% block javascripts %}
+
+{% endblock javascripts %}
+
+
+
+    {% block content %}
+
+    <html>
+    <head>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-primary">
+                            <h4 class="card-title ">liste des astuces</h4>
+                            <p class="card-category"> </p>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class=" text-primary">
+                                    <th>Title</th>
+                                    <th>Details</th>
+                                    <th>video</th>
+
+                                    </thead>
+                                    <tbody>
+                                    {% for par in c %}
+                                        <tr>
+                                            <td>{{ par.title }}</td>
+                                            <td>{{ par.details }}</td>
+                                            <td>{{ par.videoUrl }}</td>
+                                            <td>
+                                                <a href="http://localhost/CharityLandV2/web/app_dev.php/Modifier/Modifier/{{ par.id }}" class="btn btn-success">Modifier</a>
+                                            </td>
+                                            <td>
+                                                <a href="http://localhost/CharityLandV2/web/app_dev.php/Supprimer/Supprimer/{{ par.id }}" class="btn btn-danger">Supprimer</a>
+
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+    {% endblock content %}
+

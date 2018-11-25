@@ -1,0 +1,38 @@
+AppBundle\Entity\CommentaireEvent:
+    type: entity
+    table: commentaire_event
+    id:
+        idComment:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: id_comment
+            generator:
+                strategy: IDENTITY
+    fields:
+        idEvent:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: id_Event
+        idUtilisateur:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: id_utilisateur
+        date:
+            type: datetime
+            nullable: false
+            options:
+                default: CURRENT_TIMESTAMP
+        comment:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }
