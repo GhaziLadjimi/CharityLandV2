@@ -51,7 +51,7 @@ class AstucesController extends Controller
 
             $em->persist($astuce);
             $em->flush();
-            return $this->redirectToRoute("afficheastuce");
+            return $this->redirectToRoute("afficheastucewithout");
 
         }
         return $this->render('FrontEnd/Astuce/AjoutAstuce.html.twig', array('form' => $form->createView()));
@@ -125,7 +125,7 @@ dump($query);
             $astuce->setId($id);
             $em->merge($astuce);
             $em->flush();
-            return $this->redirectToRoute("afficheastuce");
+            return $this->redirectToRoute("afficheastucewithout");
 
         }
         return $this->render('FrontEnd/Astuce/modifier.html.twig', array('form' => $form->createView()));
@@ -139,7 +139,7 @@ dump($query);
         $astuce=$em->getRepository(Astuce::class)->find($id);
         $em->remove($astuce);
         $em->flush();
-        return $this->redirectToRoute("afficheastuce");
+        return $this->redirectToRoute("afficheastucewithout");
 
     }
     /**

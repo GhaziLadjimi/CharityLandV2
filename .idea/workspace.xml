@@ -2,88 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="157ee25a-0263-4cbe-a5dd-f0610fb51340" name="Default Changelist" comment="AstuceDone">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_27_11_18_00_18_c.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/affichage.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/ajout-publicite.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/modifier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/PubliciteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Benificiare.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Commentaire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CommentaireEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Declaration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Don.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enchere.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Event.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Historique.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/HistoriqueEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Historiqueusers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Participant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Produit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Publicite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CharityLandV2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CharityLandV2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/ContentAstuce.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/ContentAstuce.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/affichage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/affichage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/astuce.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/astuce.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/modifier.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/modifier.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Astuce.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Benificiare.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Commentaire.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/CommentaireEvent.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Declaration.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Don.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Enchere.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Event.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Historique.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/HistoriqueEvent.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Historiqueusers.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Participant.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Produit.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/Publicite.orm.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/config/doctrine/User.orm.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/publicites/280px-Logo_Orangina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/publicites/images (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/videos/videos/images (3).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
@@ -151,7 +76,7 @@
         <counts>
           <entry key="json" value="2" />
           <entry key="php" value="1552" />
-          <entry key="twig" value="896" />
+          <entry key="twig" value="910" />
           <entry key="txt" value="293" />
           <entry key="yml" value="151" />
         </counts>
@@ -161,7 +86,7 @@
           <entry key="JSON" value="2" />
           <entry key="PHP" value="1552" />
           <entry key="PLAIN_TEXT" value="293" />
-          <entry key="Twig" value="896" />
+          <entry key="Twig" value="910" />
           <entry key="YAML" value="151" />
         </counts>
       </usages-collector>
@@ -171,8 +96,8 @@
           <entry key="dist" value="1" />
           <entry key="js" value="3" />
           <entry key="json" value="2" />
-          <entry key="php" value="69" />
-          <entry key="twig" value="68" />
+          <entry key="php" value="71" />
+          <entry key="twig" value="69" />
           <entry key="xml" value="1" />
           <entry key="yml" value="20" />
         </counts>
@@ -182,9 +107,9 @@
           <entry key="CSS" value="1" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="69" />
+          <entry key="PHP" value="71" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Twig" value="68" />
+          <entry key="Twig" value="69" />
           <entry key="XML" value="1" />
           <entry key="YAML" value="20" />
         </counts>
@@ -198,14 +123,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
-              <folding>
-                <element signature="e#36#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="109">
+              <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -213,10 +135,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/PubliciteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+            <state relative-caret-position="178">
+              <caret line="74" column="50" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="50" />
               <folding>
                 <element signature="e#131#162#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="174" column="7" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
+              <folding>
+                <element signature="e#36#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -234,7 +168,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/affichage.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -246,8 +180,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="23" selection-end-line="73" selection-end-column="26" />
+            <state relative-caret-position="272">
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -283,10 +217,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>roles</find>
-      <find>phone</find>
-      <find>name</find>
-      <find>last</find>
       <find>user</find>
       <find>dat</find>
       <find>date</find>
@@ -305,14 +235,18 @@
       <find>Title</find>
       <find>form</find>
       <find>fineup</find>
-      <find>style</find>
       <find>details</find>
       <find>afiche</find>
       <find>card</find>
       <find>ajout</find>
       <find>pub</find>
       <find>affiche</find>
+      <find>liste des astuces</find>
       <find>affichepubquery</find>
+      <find>userid</find>
+      <find>afficheastuce</find>
+      <find>astuces</find>
+      <find>style</find>
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -372,7 +306,6 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/RegistrationType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstuceController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/UploadListener.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
@@ -381,16 +314,17 @@
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/ajout-publicite.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/modifier.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/modifier.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Publicite.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/affichage.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/PubliciteController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/affichage.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig" />
       </list>
     </option>
   </component>
@@ -670,7 +604,7 @@
       <workItem from="1543250768787" duration="11615000" />
       <workItem from="1543274662250" duration="2712000" />
       <workItem from="1543879480934" duration="2957000" />
-      <workItem from="1543934480244" duration="18523000" />
+      <workItem from="1543934480244" duration="19357000" />
     </task>
     <task id="LOCAL-00001" summary="fos+template">
       <created>1543152510310</created>
@@ -690,7 +624,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50566000" />
+    <option name="totallyTimeSpent" value="51400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -856,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="383" selection-start-line="383" selection-end-line="383" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/UploadListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -908,13 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-end-line="73" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -983,40 +903,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/affichage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="148" column="7" selection-start-line="148" selection-start-column="4" selection-end-line="148" selection-end-column="7" />
-          <folding>
-            <element signature="e#131#159#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="126">
+          <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Astuce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="172" column="5" selection-start-line="172" selection-start-column="5" selection-end-line="172" selection-end-column="5" />
+        <state relative-caret-position="209">
+          <caret line="174" column="7" selection-start-line="174" selection-start-column="7" selection-end-line="174" selection-end-column="7" />
           <folding>
             <element signature="e#36#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/AstucesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="141" column="59" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="59" />
+          <folding>
+            <element signature="e#131#159#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/FrontEnd/PubliciteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="96" column="65" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
+        <state relative-caret-position="178">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="50" />
           <folding>
             <element signature="e#131#162#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Publicite/affichage.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/Astuce/AjoutAstuce.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+        <state relative-caret-position="272">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/FrontEnd/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="53" column="61" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
         </state>
       </provider>
     </entry>
