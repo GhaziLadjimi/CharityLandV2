@@ -1,0 +1,97 @@
+{% extends 'FrontEnd/layout.html.twig' %}
+{% block title %}Forum{% endblock title %}
+
+
+{% block javascripts %}
+
+{% endblock javascripts %}
+
+
+
+    {% block content %}
+        </br>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+
+        <html>
+        <head>
+            <meta charset="UTF-8"/>
+        </head>
+        <body>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title ">liste des publicités</h4>
+                                <p class="card-category"></p>
+                            </div>
+                            <div class="card-body">
+                                <form method="post" action="{{ path('affichepubquery') }}" >
+                                    <input type="text" placeholder="search"  name="query" id="query"/>
+                                    <button type="submit" > <i class="fa fa-search fa-lg"></i></button>
+                                </form>
+
+                                </br>
+                                <a href="{{ path('ajoutpub') }}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-plus fa-lg"></i>
+
+                                </a> Ajouter
+
+                                <a href="{{ path('affichepubsort', {'sort': 'title'})  }}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-sort fa-lg"></i>
+
+                                </a> Trier
+
+                                <a href="{{ path('affiche' )}}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-refresh fa-lg"></i>
+
+                                </a> Reinistializer
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class=" text-primary">
+
+                                        <th>Image</th>
+                                        <th>Title</th>
+                                        <th>Desciption</th>
+                                        <th>Actions</th>
+                                        </thead>
+                                        <tbody>
+                                        {% for par in c %}
+                                            <tr>
+
+                                                <td><img width="180" height="120" src="http://localhost/CharityLandV2/public/{{ vich_uploader_asset(par, 'imageFile') }}"/></td>
+                                                <td>{{ par.title }}</td>
+                                                <td>{{ par.description }}</td>
+                                                <td>
+                                                    <a href="{{ path('modofierpub', {'id': par.id}) }}"
+                                                       class="btn btn-success"> <i class="fa fa-edit fa-lg"></i></a>
+
+
+                                                    <a href="{{ path('supprimerpub', {'id': par.id}) }}"
+                                                       class="btn btn-danger"> <i class="fa fa-trash fa-lg"></i></a>
+
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </body>
+        </html>
+    {% endblock content %}
+

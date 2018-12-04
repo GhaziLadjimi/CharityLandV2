@@ -52,7 +52,7 @@
                         <li class="menu-has-children"><a href="">Partenaires</a>
                             <ul>
                                 <li><a href="{{ path('publicite')}}">Publicités</a></li>
-                                <li><a href="{{ path('astuce')}}">Astuces</a></li>
+                                <li><a href="{{ path('affiche')}}">Astuces</a></li>
                             </ul>
                         </li>
 
@@ -107,14 +107,15 @@
                             <div class="row">
                                 <div class="col-md-5 wrap-right">
                                     <div class="input-group dates-wrap">
-                                {#   <!--     <button type="submit" class="primary-btn white" formaction="{{ path('fos_user_registration_register')}}">Rejoignez-nous-->
-                                        </button>#}
+                                     <button type="submit" class="primary-btn white" formaction="{{ path('fos_user_registration_register')}}">Rejoignez-nous
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="col-md-5 wrap-right">
                                     <div class="input-group dates-wrap">
-                                    {#<!--    <button type="submit" class="primary-btn white" formaction="{{ path('fos_user_registration_confirmed')}}">Déjà de la famille</button>-->
-                                    #}</div>
+                                        <button type="submit" class="primary-btn white" formaction="{{ path('fos_user_registration_confirmed')}}">Déjà de la famille
+                                    </button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -379,6 +380,7 @@
     </footer>
     <!-- End footer Area -->
 {% endblock %}
+<script type="text/javascript" src="fine-uploader/fine-uploader.min.js"></script>
 
 <script src="{{asset('Charity/js/vendor/jquery-2.2.4.min.js')}}"></script>
 <script src="{{asset('Charity/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js')}}" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"

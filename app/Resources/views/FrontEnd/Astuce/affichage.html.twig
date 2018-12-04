@@ -1,4 +1,3 @@
-
 {% extends 'FrontEnd/layout.html.twig' %}
 {% block title %}Forum{% endblock title %}
 
@@ -10,56 +9,96 @@
 
 
     {% block content %}
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
 
-    <html>
-    <head>
-        <meta charset="UTF-8" />
-    </head>
-    <body>
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header card-header-primary">
-                            <h4 class="card-title ">liste des astuces</h4>
-                            <p class="card-category"> </p>
+        <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        </head>
+        <body>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header card-header-primary">
+                                <h4 class="card-title ">liste des astuces</h4>
+
+                                <p class="card-category"></p>
+
                         </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead class=" text-primary">
-                                    <th>Title</th>
-                                    <th>Details</th>
-                                    <th>video</th>
 
-                                    </thead>
-                                    <tbody>
-                                    {% for par in c %}
-                                        <tr>
-                                            <td>{{ par.title }}</td>
-                                            <td>{{ par.details }}</td>
-                                            <td>{{ par.videoUrl }}</td>
-                                            <td>
-                                                <a href="http://localhost/CharityLandV2/web/app_dev.php/Modifier/Modifier/{{ par.id }}" class="btn btn-success">Modifier</a>
-                                            </td>
-                                            <td>
-                                                <a href="http://localhost/CharityLandV2/web/app_dev.php/Supprimer/Supprimer/{{ par.id }}" class="btn btn-danger">Supprimer</a>
+                            <div class="card-body">
+                                <form method="post" action="{{ path('afficheastucequery') }}" >
+                                    <input type="text" placeholder="search"  name="query" id="query"/>
+                                    <button type="submit" > <i class="fa fa-search fa-lg"></i></button>
+                                </form>
 
-                                            </td>
-                                        </tr>
-                                    {% endfor %}
-                                    </tbody>
-                                </table>
+                                </br>
+                                <a href="{{ path('ajoutastuce') }}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-plus fa-lg"></i>
+
+                                </a> Ajouter
+
+                                <a href="{{ path('afficheastucesort', {'sort': 'title'})  }}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-sort fa-lg"></i>
+
+                                </a> Trier
+
+                                <a href="{{ path('afficheastucewithout' )}}"
+                                   class="btn btn-success fa-lg" >                                <i class="fa fa-refresh fa-lg"></i>
+
+                                </a> Reinistializer
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class=" text-primary">
+                                        <th>Title</th>
+                                        <th>Details</th>
+                                        <th>video</th>
+                                        <th>ActionsX</th>
+
+                                        </thead>
+                                        <tbody>
+                                        {% for par in c %}
+                                            <tr>
+                                                <td>{{ par.title }}</td>
+                                                <td>{{ par.details }}</td>
+                                                <td>
+
+                                                    <video width="180" height="120" controls>
+                                                        <source src="http://localhost/CharityLandV2/public/{{ vich_uploader_asset(par, 'videoFile') }}" type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </td>
+                                                <td>
+                                                    <a href="{{ path('modofierastuce', {'id': par.id}) }}"
+                                                       class="btn btn-success"> <i class="fa fa-edit fa-lg"></i></a>
+
+
+                                                    <a href="{{ path('supprimerastuce', {'id': par.id}) }}"
+                                                       class="btn btn-danger"> <i class="fa fa-trash fa-lg"></i></a>
+
+                                                </td>
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-    </body>
-    </html>
+        </body>
+        </html>
     {% endblock content %}
 

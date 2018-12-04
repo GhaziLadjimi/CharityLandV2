@@ -18,10 +18,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 use Symfony\Component\HttpFoundation\Response;
+
 class HomeController extends Controller
 {
     /**
-     * @Route("/Home/Homepage",name="home")
+     * @Route("/TunisiaCharityLand",name="home")
      *
      */
     public function HomepageAction()
@@ -29,82 +30,101 @@ class HomeController extends Controller
 
         return $this->render('FrontEnd/layout.html.twig');
     }
+
     /**
-     * @Route("/Annonce/Annoncepage",name="annonce")
+     * @Route("/annonce",name="annonce")
      *
      */
     public function AnnoncepageAction()
     {
 
         return $this->render('FrontEnd/Annonce/annonce.html.twig');
-    }  /**
- * @Route("/Action/actionpage",name="action")
- *
- */
+    }
+
+    /**
+     * @Route("/action",name="action")
+     *
+     */
     public function actionpageAction()
     {
 
         return $this->render('FrontEnd/ActionBeneficiare/action.html.twig');
-    }  /**
- * @Route("/Astuce/Astucepage",name="astuce")
- *
- */
+    }
+
+    /**
+     * @Route("/astuce",name="astuce")
+     *
+     */
     public function AstuceageAction()
     {
 
         return $this->render('FrontEnd/Astuce/astuce.html.twig');
-    }  /**
- * @Route("/Beneficiaire/beneficiairepage",name="beneficiaire")
- *
- */
+    }
+
+    /**
+     * @Route("/beneficiaire",name="beneficiaire")
+     *
+     */
     public function beneficiairepageAction()
     {
 
         return $this->render('FrontEnd/Beneficiaire/beneficiaire.html.twig');
-    }  /**
- * @Route("/Blog/Bolgpage",name="blog")
- *
- */
+    }
+
+    /**
+     * @Route("/blog",name="blog")
+     *
+     */
     public function BlogpageAction()
     {
 
         return $this->render('FrontEnd/Blog/blog.html.twig');
-    }  /**
- * @Route("/CommentEvent/CommentEventpage",name="commentevent")
- *
- */
+    }
+
+    /**
+     * @Route("/commentEvent",name="commentevent")
+     *
+     */
     public function CommentEventpageAction()
     {
 
         return $this->render('FrontEnd/CommentaireEvent/commentaireEvent.html.twig');
-    }  /**
- * @Route("/Dons/donspage",name="dons")
- *
- */
+    }
+
+    /**
+     * @Route("/dons",name="dons")
+     *
+     */
     public function donspageAction()
     {
 
         return $this->render('FrontEnd/Dons/dons.html.twig');
-    }  /**
- * @Route("/Enchaire/Enchairepage",name="enchaire")
- *
- */
+    }
+
+    /**
+     * @Route("/enchaire",name="enchaire")
+     *
+     */
     public function EnchairepageAction()
     {
 
         return $this->render('FrontEnd/Enchaire/enchaire.html.twig');
-    }  /**
- * @Route("/Event/Eventpage",name="event")
- *
- */
+    }
+
+    /**
+     * @Route("/event",name="event")
+     *
+     */
     public function EventpageAction()
     {
 
         return $this->render('FrontEnd/Event/event.html.twig');
-    }  /**
- * @Route("/Publicite/Publicitepage",name="publicite")
- *
- */
+    }
+
+    /**
+     * @Route("/publicite",name="publicite")
+     *
+     */
     public function PublicitepageAction()
     {
 

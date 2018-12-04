@@ -1,0 +1,144 @@
+
+{% trans_default_domain 'FOSUserBundle' %}
+{% block title %}Forum{% endblock title %}
+
+
+{% block javascripts %}
+
+{% endblock javascripts %}
+
+
+
+    {% block content %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+{{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Adresse Mail</label>
+<div class="input-group">
+    {{ form_widget(form.email,{'attr':{'class':'form-control','placeholder':'Adresse mail'}}) }}
+</div>
+</div>
+<br/>
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Username</label>
+<div class="input-group">
+    {{ form_widget(form.username,{'attr':{'class':'form-control','placeholder':'Username'}}) }}
+</div>
+</div>
+<br/>
+
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Password</label>
+<div class="input-group">
+    {{ form_widget(form.plainPassword.first,{'attr':{'class':'form-control','placeholder':'Password'}}) }}
+</div>
+</div>
+
+<br/>
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Repetez Mot de passe</label>
+<div class="input-group">
+    {{ form_widget(form.plainPassword.second,{'attr':{'class':'form-control','placeholder':'Repetez Mot de Passe'}}) }}
+</div>
+</div>
+
+<br/>
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">First_name</label>
+<div class="input-group">
+    {{ form_widget(form.first_name,{'attr':{'class':'form-control','placeholder':'First_Name'}}) }}
+</div>
+</div>
+
+<br/>
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Last NAme</label>
+<div class="input-group">
+    {{ form_widget(form.last_name,{'attr':{'class':'form-control','placeholder':'Name'}}) }}
+</div>
+</div>
+
+<br/>
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Date de naissance </label>
+<div class="input-group">
+    {{ form_widget(form.birth_date,{'attr':{'class':'form-control','placeholder':'Date de naissance','data-provide':'datepicker'}}) }}
+
+
+</div>
+</div>
+<br/>
+
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300" >Phone</label>
+<div class="input-group">
+    {{ form_widget(form.phone,{'attr':{'class':'form-control','placeholder':'Phone'}}) }}
+</div>
+</div>
+<br/>
+
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Description</label>
+<div class="input-group">
+    {{ form_widget(form.description,{'attr':{'class':'form-control','placeholder':'Description'}}) }}
+</div>
+</div>
+<br/>
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Logo</label>
+<div class="input-group">
+    {{ form_widget(form.logo,{'attr':{'class':'form-control','placeholder':'Logo'}}) }}
+</div>
+</div>
+
+<br/>
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Adresse</label>
+<div class="input-group">
+    {{ form_widget(form.address,{'attr':{'class':'form-control','placeholder':'Adresse'}}) }}
+</div>
+</div>
+
+
+<div class="col-xs-3 col-md-5"">
+<label style ="color:#00b300">Role</label>
+<div class="input-group">
+    {{ form_widget(form.roles,{'attr':{'class':'form-control'}}) }}
+</div>
+</div>
+
+<br/>
+<br/>
+<br/>
+{{ form_widget(form) }}
+<div class="col-sm-offset-2 col-sm-2">
+    <div>
+        <input class="btn btn-block btn-success" type="submit" value="{{ 'registration.submit'|trans }}" />
+    </div>
+</div>
+{{ form_end(form) }}
+<br/>
+<br/>
+
+<div align="right">
+
+    <a href="#">Haut de la page</a>
+</div>
+    {% endblock content %}

@@ -1,0 +1,74 @@
+{% extends 'FrontEnd/layout.html.twig' %}
+{% block title %}Forum{% endblock title %}
+
+
+{% block javascripts %}
+
+{% endblock javascripts %}
+
+
+
+    {% block content %}
+
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Ajout d'une publicité</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- MATERIAL DESIGN ICONIC FONT -->
+            <link rel="stylesheet"
+                  href="{{ asset('/CharityLandV2/web/Charity/Ajout/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+
+            <!-- STYLE CSS -->
+            <link rel="stylesheet" href="{{ asset('/CharityLandV2/web/Charity/Ajout/css/style.css') }}">
+        </head>
+
+        <body>
+
+        <div class="wrapper" style="background-image:url("{{ asset('/CharityLandV2/web/Charity/Ajout/images/bg-registration-form-1.jpg') }}
+        ")">
+        <div class="inner">
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background: url('https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/06/10/charity-main.jpg?w968');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            </style>
+            <div class="image-holder">
+                <img src="{{ asset('/CharityLandV2/web/Charity/Ajout/images/registration-form-1.jpg') }}" alt="" width=" 855px"
+                     height="555px">
+            </div>
+            {{ form_start(form )}}
+            {{ form_errors(form) }}
+            <h3>Ajout Publicite</h3>
+
+                <div class="form-wrapper">
+                    {{ form_row(form.title) }}
+                </div>
+                <div class="form-wrapper">
+                    {{ form_row(form.description) }}
+
+
+                </div>
+
+                <div class="form-wrapper">
+
+                    {{ form_row(form.imageFile) }}
+
+
+                </div>
+            {{ form_end(form) }}
+
+        </div>
+        </div>
+
+        </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+        </html>
+
+
+
+    {% endblock content %}

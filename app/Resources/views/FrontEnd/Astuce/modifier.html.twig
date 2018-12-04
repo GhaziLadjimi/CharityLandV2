@@ -9,53 +9,66 @@
 
 
     {% block content %}
-<br>
-<br>
-<br>
-<br>
-<br>
+
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Modifier d'une publicité</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- MATERIAL DESIGN ICONIC FONT -->
+            <link rel="stylesheet"
+                  href="{{ asset('/CharityLandV2/web/Charity/Ajout/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+
+            <!-- STYLE CSS -->
+            <link rel="stylesheet" href="{{ asset('/CharityLandV2/web/Charity/Ajout/css/style.css') }}">
+        </head>
+
+        <body>
+
+        <div class="wrapper" style="background-image:url("{{ asset('/CharityLandV2/web/Charity/Ajout/images/bg-registration-form-1.jpg') }}
+        ")">
+        <div class="inner">
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    background: url('https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/07/06/10/charity-main.jpg?w968');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            </style>
+            <div class="image-holder">
+                <img src="{{ asset('/CharityLandV2/web/Charity/Ajout/images/registration-form-1.jpg') }}" alt="" width=" 855px"
+                     height="555px">
+            </div>
+            {{ form_start(form )}}
+            {{ form_errors(form) }}
+            <h3>Modifier Publicite</h3>
+
+            <div class="form-wrapper">
+                {{ form_row(form.title) }}
+            </div>
+            <div class="form-wrapper">
+                {{ form_row(form.details) }}
 
 
+            </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div>
+            <div class="form-wrapper">
+
+                {{ form_row(form.videoFile) }}
 
 
-</div>
+            </div>
+            {{ form_end(form) }}
 
-<div class="container"  style="background-color:#66CDAA;">
-    <!--  <center><h2><b><i>Ajout d'une Annonce</i></b></h2></center>-->
-    <form method="post" action="">
-
-        <div class="form-group">
-            <label for="pwd">title:</label>
-            <input type="text" class="form-control" id="lieu" placeholder="Entrer title" name="title" required>
         </div>
-        <div class="form-group">
-            <label for="pwd">Details</label>
-            <input type="text" class="form-control" id="date" placeholder="Entrer details" name="details" required>
-        </div>
-        <div class="form-group">
-            <label for="pwd">video:</label>
-            <input type="file" class="form-control" id="desc" placeholder="Entrer video" name="video"  accept="video/*"required>
         </div>
 
-        <center>
-            <input type="submit"  value="modifier">
-        </center>
-    </form>
-</div>
+        </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+        </html>
 
-</body>
-</html>
+
+
     {% endblock content %}
